@@ -7,6 +7,7 @@ import PIL.Image
 import sys
 import torch
 import os
+import glob
 
 ##########################################################
 
@@ -130,6 +131,7 @@ def estimate(tenInput):
 ##########################################################
 
 if __name__ == '__main__':
+#     arguments_strModel = 'bsds500'
     path = "/mnt/blob/dataset/Imagenet-new/ImageNet/val/"
     save_path2 = "/dataset/train_sketch"
     save_path1 = "/dataset/train_img"
