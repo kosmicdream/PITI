@@ -130,7 +130,11 @@ def estimate(tenInput):
 ##########################################################
 
 if __name__ == '__main__':
-    path = "/mnt/blob/dataset/Imagenet-new/ImageNet/val/"
+    if image_path:
+        path = image_path
+    else:
+        raise ValueError('need to specify the path of the images that need transformation')
+#     path = "/mnt/blob/dataset/Imagenet-new/ImageNet/val/"
     save_path2 = "/mnt/blob/dataset/Flickr/train_sketch"
     save_path1 = "/mnt/blob/dataset/Flickr/train_img"
     files = glob.glob(path)
